@@ -1,0 +1,30 @@
+master_main2.c: In function ‘testConvertLbsKg’:
+master_main2.c:204:2: warning: implicit declaration of function ‘convertLbsKg’ [-Wimplicit-function-declaration]
+  dblB = convertLbsKg(&lbs, &dblA);
+  ^
+master_main2.c: In function ‘testConvertLbsG’:
+master_main2.c:257:2: warning: implicit declaration of function ‘convertLbsG’ [-Wimplicit-function-declaration]
+  intB = convertLbsG(&lbs, &intA);
+  ^
+master_main2.c: In function ‘testConvertLbs’:
+master_main2.c:308:2: warning: implicit declaration of function ‘convertLbs’ [-Wimplicit-function-declaration]
+  convertLbs(&lbs, &dblA, &intB);
+  ^
+w8p2.c: In function ‘lbsconversion’:
+w8p2.c:167:6: warning: unused variable ‘lbstog’ [-Wunused-variable]
+  int lbstog = ((*lbs) / LBS_KG_CONSTANT) * 1000;
+      ^
+w8p2.c:166:9: warning: unused variable ‘lbstokg’ [-Wunused-variable]
+  double lbstokg = (*lbs) / LBS_KG_CONSTANT;
+         ^
+/tmp/ccJoKcEj.o: In function `testConvertLbsKg':
+master_main2.c:(.text+0x41e): undefined reference to `convertLbsKg'
+master_main2.c:(.text+0x4ac): undefined reference to `convertLbsKg'
+master_main2.c:(.text+0x529): undefined reference to `convertLbsKg'
+/tmp/ccJoKcEj.o: In function `testConvertLbsG':
+master_main2.c:(.text+0x5d9): undefined reference to `convertLbsG'
+master_main2.c:(.text+0x63a): undefined reference to `convertLbsG'
+master_main2.c:(.text+0x695): undefined reference to `convertLbsG'
+/tmp/ccJoKcEj.o: In function `testConvertLbs':
+master_main2.c:(.text+0x734): undefined reference to `convertLbs'
+collect2: error: ld returned 1 exit status

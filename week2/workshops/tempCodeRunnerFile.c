@@ -1,0 +1,14 @@
+ // qty_inctax_toonies = total_all/TOONIE;
+    // dec_bal_inctax_toonies = (double)total_all/100 - (int)total_all/100;
+    // mod_toonies_bal = total_all%2;
+    // bal_inctax_toonies = (qty_inctax_toonies%2)*100 + dec_bal_inctax_toonies*100 + mod_toonies_bal*100;
+    // qty_inctax_loonies = (int)bal_inctax_toonies/100;
+    // bal_inctax_loonies = (double)bal_inctax_toonies/100 - (double)qty_inctax_loonies; 
+    // qty_inctax_quarters = (bal_inctax_loonies*100)/QUARTER;
+    // bal_inctax_quarters = (bal_inctax_loonies) - QUARTER * (double)qty_inctax_quarters/100;
+    // qty_inctax_dimes = bal_inctax_quarters/DIME;
+    // bal_inctax_dimes = bal_inctax_quarters - qty_inctax_dimes;
+    // qty_inctax_nickels = bal_inctax_dimes*100/NICKEL;
+    // bal_inctax_nickels = bal_inctax_dimes-(double)NICKEL/100;
+    // qty_inctax_pennies = (bal_inctax_nickels)*100;
+    // bal_inctax_pennies = bal_inctax_nickels - qty_incta
